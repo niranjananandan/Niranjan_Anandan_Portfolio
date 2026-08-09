@@ -13,7 +13,7 @@ A modern, responsive, and high-performance interactive developer portfolio showc
 - **⚡ Interactive AI Assistant Chatbot**: Custom profile chatbot answering questions about skills, projects, and credentials.
 - **🎨 Glassmorphism & Modern UI**: Tailored Dark Theme with smooth Framer Motion micro-animations and interactive particle canvas background.
 - **📁 Integrated Resume & CV Download**: Direct access to verified PDF credentials and resume.
-- **📊 Showcase of 5 AI & Data Science Projects**: Includes Attrition Tracker, PixelFoodie AI Predictor, Recipe Recommender, and Retail Textile Power BI Dashboard.
+- **📊 Showcase of 5 AI & Data Science Projects**: Includes Attrition Tracker, PixelFoodie AI Predictor, Recipe Recommender, and PowerBI-Retail-Profitability-Dashboard.
 - **📱 100% Mobile Responsive**: Optimized for seamless viewing across smartphones, tablets, and high-res desktops.
 
 ---

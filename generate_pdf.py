@@ -105,8 +105,8 @@ def create_resume():
          "Developed an innovative food recipe website integrating AI for smart ingredient matching and restaurant-style dish suggestions."
     p2 = "<b>CYBERMEDIA | CYBERTHREATS & SAFETY</b><br/>" \
          "Demonstrated a deep understanding of cyber threats."
-    p3 = "<b>RETAIL TEXTILE SHOP DATA ANALYSIS & VISUALIZATIONS</b><br/>" \
-         "Designed large-scale retail data visualizations using Power BI to extract actionable business insights and identify sales trends."
+    p3 = "<b>PowerBI-Retail-Profitability-Dashboard</b><br/>" \
+         "An interactive Power BI dashboard analyzing seasonal textile sales and material profitability. Built with Power Query and DAX, featuring a modern, dark-themed UI for actionable insights."
     story.append(Paragraph(p1, body_style))
     story.append(Spacer(1, 4))
     story.append(Paragraph(p2, body_style))

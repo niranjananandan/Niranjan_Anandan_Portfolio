@@ -53,10 +53,10 @@ const AiChatWidget = () => {
       return "PixelFoodie features two intelligent AI applications:\n1. AI Predictor: Analyzes food preferences to predict custom recipes.\n2. Recipe Recommender: Matches available kitchen ingredients to traditional & modern Indian recipes.";
     }
     if (q.includes('textile') || q.includes('power bi') || q.includes('retail') || q.includes('dashboard')) {
-      return "The Retail Textile Shop Data Analysis project is an interactive Power BI dashboard powered by SQL queries to analyze store performance, sales trends, and customer buying segments.";
+      return "The PowerBI-Retail-Profitability-Dashboard project is an interactive Power BI dashboard analyzing seasonal textile sales and material profitability. Built with Power Query and DAX, featuring a modern, dark-themed UI for actionable insights.";
     }
     if (q.includes('project') || q.includes('work') || q.includes('build') || q.includes('app') || q.includes('portfolio')) {
-      return "Niranjan has built 5 major projects:\n1. 🧠 Attrition Tracker (AI Churn Predictor)\n2. 🥗 PixelFoodie AI Predictor\n3. 🍳 PixelFoodie Smart Recipe Recommender\n4. 📊 Retail Textile Shop Data Analysis (Power BI & SQL)\n5. 🌐 PixelFoodie Recipe Web App";
+      return "Niranjan has built 5 major projects:\n1. 🧠 Attrition Tracker (AI Churn Predictor)\n2. 🥗 PixelFoodie AI Predictor\n3. 🍳 PixelFoodie Smart Recipe Recommender\n4. 📊 PowerBI-Retail-Profitability-Dashboard (Power BI & Data Visualization)\n5. 🌐 PixelFoodie Recipe Web App";
     }
 
     // Skills & Stack

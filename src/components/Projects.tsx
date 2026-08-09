@@ -23,9 +23,9 @@ const projects = [
     demo: 'https://pixelfoodie-ai-predictor.onrender.com',
   },
   {
-    title: 'RETAIL TEXTILE SHOP DATA ANALYSIS',
+    title: 'PowerBI-Retail-Profitability-Dashboard',
     category: 'Data Visualization',
-    description: 'Interactive retail performance dashboard built with Power BI to analyze shop sales trends, customer segments, and business KPIs.',
+    description: 'An interactive Power BI dashboard analyzing seasonal textile sales and material profitability. Built with Power Query and DAX, featuring a modern, dark-themed UI for actionable insights.',
     icon: <LineChart size={28} color="var(--primary-color)" />,
     tech: ['Power BI', 'Data Visualization', 'SQL'],
     github: 'https://github.com/niranjananandan/RETAIL-TEXTILE-SHOP-DATA-ANALYSIS',
