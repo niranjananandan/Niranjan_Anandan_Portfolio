@@ -136,12 +136,8 @@ const About = () => {
               {/* Bio Details */}
               <motion.div variants={itemVariants} className="glass-card bio-card">
                 <h3 className="card-heading">Professional Summary</h3>
-                <p>
-                  I am a detail-oriented and analytical Artificial Intelligence and Machine Learning student. 
-                  My focus centers on leveraging data-driven algorithms to discover meaningful insights and optimize predictive models.
-                </p>
-                <p className="bio-desc-secondary">
-                  Experienced in Python, SQL, and predictive modeling. Passionate about developing modern machine learning applications, data visualization dashboards, and smart recommendation systems.
+                <p className="bio-summary-text">
+                  I'm an analytical AI/ML student focused on using data-driven algorithms to uncover insights and optimize predictive models. Experienced in Python, SQL, and predictive modeling. Passionate about developing modern machine learning applications, data visualization dashboards, and smart recommendation systems.
                 </p>
 
                 {/* Specialties Grid */}

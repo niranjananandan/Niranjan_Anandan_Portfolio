@@ -301,8 +301,11 @@
   color: var(--text-dim);
 }
 
-.bio-desc-secondary {
-  margin-bottom: 1.75rem;
+.bio-summary-text {
+  font-size: 1.02rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
 /* Specialties Grid (Image 1) */
@@ -310,7 +313,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
-  margin: 1.5rem 0 1.75rem 0;
+  margin: 1.25rem 0 1.5rem 0;
 }
 
 .specialty-card {
