@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp } from 'lucide-react';
+import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe } from 'lucide-react';
 import './About.css';
 
 const About = () => {
@@ -128,6 +128,13 @@ const About = () => {
                     <div>
                       <span className="info-label">Phone</span>
                       <a href="tel:+916374515328" className="info-val info-link">+91 6374515328</a>
+                    </div>
+                  </li>
+                  <li>
+                    <Globe size={18} color="var(--primary-color)" />
+                    <div>
+                      <span className="info-label">Languages</span>
+                      <span className="info-val">Tamil, English, Telugu</span>
                     </div>
                   </li>
                 </ul>
