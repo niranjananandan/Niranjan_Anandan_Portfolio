@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap } from 'lucide-react';
+import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp } from 'lucide-react';
 import './About.css';
 
 const About = () => {
@@ -140,9 +140,68 @@ const About = () => {
                   I am a detail-oriented and analytical Artificial Intelligence and Machine Learning student. 
                   My focus centers on leveraging data-driven algorithms to discover meaningful insights and optimize predictive models.
                 </p>
-                <p>
+                <p className="bio-desc-secondary">
                   Experienced in Python, SQL, and predictive modeling. Passionate about developing modern machine learning applications, data visualization dashboards, and smart recommendation systems.
                 </p>
+
+                {/* Specialties Grid */}
+                <div className="specialties-grid">
+                  <div className="specialty-card">
+                    <div className="specialty-icon-box">
+                      <Cpu size={20} className="specialty-icon" />
+                    </div>
+                    <div className="specialty-content">
+                      <h4>Machine Learning & Deep Learning</h4>
+                      <p>Developing predictive models in Python with Pandas, NumPy & Scikit-Learn.</p>
+                    </div>
+                  </div>
+
+                  <div className="specialty-card">
+                    <div className="specialty-icon-box">
+                      <BarChart2 size={20} className="specialty-icon" />
+                    </div>
+                    <div className="specialty-content">
+                      <h4>Data Analytics & Power BI</h4>
+                      <p>Designing interactive KPI dashboards, DAX calculations & clustered column reports.</p>
+                    </div>
+                  </div>
+
+                  <div className="specialty-card">
+                    <div className="specialty-icon-box">
+                      <Sparkles size={20} className="specialty-icon" />
+                    </div>
+                    <div className="specialty-content">
+                      <h4>GenAI & Workflow Automation</h4>
+                      <p>Integrating Generative AI, LLM tools & AI prompt workflows.</p>
+                    </div>
+                  </div>
+
+                  <div className="specialty-card">
+                    <div className="specialty-icon-box">
+                      <TrendingUp size={20} className="specialty-icon" />
+                    </div>
+                    <div className="specialty-content">
+                      <h4>Data-Driven Problem Solving</h4>
+                      <p>Extracting insights to support decision-making with high attention to detail.</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Stats Grid */}
+                <div className="about-stats-grid">
+                  <div className="about-stat-card">
+                    <div className="about-stat-value">80<span className="about-stat-accent">%</span></div>
+                    <div className="about-stat-label">Academic Score</div>
+                  </div>
+                  <div className="about-stat-card">
+                    <div className="about-stat-value">3<span className="about-stat-accent">+</span></div>
+                    <div className="about-stat-label">Featured Projects</div>
+                  </div>
+                  <div className="about-stat-card">
+                    <div className="about-stat-value">5<span className="about-stat-accent">+</span></div>
+                    <div className="about-stat-label">Certifications</div>
+                  </div>
+                </div>
               </motion.div>
             </div>
           </motion.div>
