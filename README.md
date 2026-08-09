@@ -1,32 +1,85 @@
-# React + TypeScript + Vite
+# 🤖 Niranjan Anandan - Professional AI & ML Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive, and high-performance interactive developer portfolio showcasing Artificial Intelligence, Machine Learning projects, data visualization dashboards, and smart web applications.
 
-Currently, two official plugins are available:
+![Portfolio Banner](https://img.shields.io/badge/Focus-AI%20%26%20Machine%20Learning-0ea5e9?style=for-the-badge)
+![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20TypeScript%20%7C%20Vite%20%7C%20Python-0284c7?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **⚡ Interactive AI Assistant Chatbot**: Custom profile chatbot answering questions about skills, projects, and credentials.
+- **🎨 Glassmorphism & Modern UI**: Tailored Dark Theme with smooth Framer Motion micro-animations and interactive particle canvas background.
+- **📁 Integrated Resume & CV Download**: Direct access to verified PDF credentials and resume.
+- **📊 Showcase of 5 AI & Data Science Projects**: Includes Attrition Tracker, PixelFoodie AI Predictor, Recipe Recommender, and Retail Textile Power BI Dashboard.
+- **📱 100% Mobile Responsive**: Optimized for seamless viewing across smartphones, tablets, and high-res desktops.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Tech Stack & Tools
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- **Frontend & UI**: React 19, TypeScript, Vite, Framer Motion, Lucide React, React Icons, Vanilla CSS
+- **3D & Canvas**: Three.js / React Three Fiber, Custom Network Canvas
+- **AI / ML & Data Science Skills**: Python, SQL, R, Machine Learning, Deep Learning, Predictive Analytics, GenAI, Power BI, Firebase
+
+---
+
+## 📂 Project Structure
+
+```text
+Niranjan_Anandan_Portfolio/
+├── public/
+│   ├── Niranjan_Anandan_Resume.pdf
+│   ├── favicon.svg
+│   └── icons.svg
+├── src/
+│   ├── components/
+│   │   ├── About.tsx & About.css
+│   │   ├── AiChatWidget.tsx & AiChatWidget.css
+│   │   ├── CustomCursor.tsx & CustomCursor.css
+│   │   ├── Footer.tsx & Footer.css
+│   │   ├── Hero.tsx & Hero.css
+│   │   ├── Navbar.tsx & Navbar.css
+│   │   ├── NetworkBackground.tsx
+│   │   ├── Projects.tsx & Projects.css
+│   │   └── ScrollToTop.tsx & ScrollToTop.css
+│   ├── App.tsx
+│   └── main.tsx
+├── package.json
+└── vite.config.ts
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 🚀 Local Development Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/niranjananandan/Niranjan_Anandan_Portfolio.git
+   cd Niranjan_Anandan_Portfolio
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run local dev server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📬 Contact & Links
+
+- **GitHub**: [github.com/niranjananandan](https://github.com/niranjananandan)
+- **LinkedIn**: [linkedin.com/in/niranjan-anandan](https://www.linkedin.com/in/niranjan-anandan/)
+- **Email**: [1u24ai024.niranjan@gmail.com](mailto:1u24ai024.niranjan@gmail.com)
