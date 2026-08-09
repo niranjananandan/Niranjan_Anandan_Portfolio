@@ -73,7 +73,7 @@ const Hero = () => {
                   <span>LinkedIn</span>
                 </a>
                 <a 
-                  href="mailto:1u24ai024.niranjan@gmail.com" 
+                  href="#contact" 
                   className="hero-btn secondary"
                 >
                   <Mail size={18} />

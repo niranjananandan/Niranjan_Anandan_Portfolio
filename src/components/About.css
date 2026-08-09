@@ -50,6 +50,15 @@
   word-break: break-word;
 }
 
+.info-link {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-link:hover {
+  color: var(--primary-color);
+}
+
 .bio-card p {
   font-size: 1.05rem;
   color: var(--text-muted);

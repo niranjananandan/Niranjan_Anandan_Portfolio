@@ -120,14 +120,14 @@ const About = () => {
                     <Mail size={18} color="var(--primary-color)" />
                     <div>
                       <span className="info-label">Email</span>
-                      <span className="info-val">1u24ai024.niranjan@gmail.com</span>
+                      <a href="mailto:1u24ai024.niranjan@gmail.com" className="info-val info-link">1u24ai024.niranjan@gmail.com</a>
                     </div>
                   </li>
                   <li>
                     <Phone size={18} color="var(--primary-color)" />
                     <div>
                       <span className="info-label">Phone</span>
-                      <span className="info-val">+91 6374515328</span>
+                      <a href="tel:+916374515328" className="info-val info-link">+91 6374515328</a>
                     </div>
                   </li>
                 </ul>
