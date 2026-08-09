@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe } from 'lucide-react';
+import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe, Building2 } from 'lucide-react';
 import './About.css';
 
 const About = () => {
@@ -114,6 +114,13 @@ const About = () => {
                     <div>
                       <span className="info-label">Education</span>
                       <span className="info-val">B.Sc AI & ML (2027)</span>
+                    </div>
+                  </li>
+                  <li>
+                    <Building2 size={18} color="var(--primary-color)" />
+                    <div>
+                      <span className="info-label">University</span>
+                      <span className="info-val">Bharathiyar University</span>
                     </div>
                   </li>
                   <li>
