@@ -53,14 +53,26 @@
   flex-direction: column;
   gap: 0.9rem;
   width: 100%;
-  max-width: 620px;
+  max-width: 580px;
 }
 
-.hero-button-row {
+.hero-button-row.top-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.85rem;
   width: 100%;
+}
+
+.hero-button-row.bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.hero-button-row.bottom-row .hero-btn {
+  flex: 1;
+  max-width: 250px;
 }
 
 .hero-btn {

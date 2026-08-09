@@ -1,14 +1,10 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, ChevronDown, ArrowRight, Eye, Download } from 'lucide-react';
+import { Mail, ChevronDown, ArrowRight, Download } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import profileImg from '../assets/1000210087 (2).jpg';
-import ResumeModal from './ResumeModal';
 import './Hero.css';
 
 const Hero = () => {
-  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -52,8 +48,8 @@ const Hero = () => {
             </motion.h2>
             
             <motion.div variants={itemVariants} className="hero-button-matrix">
-              {/* Top Row: Connections & Contact */}
-              <div className="hero-button-row">
+              {/* Top Row: Connections & Contact (3 Buttons) */}
+              <div className="hero-button-row top-row">
                 <a 
                   href="https://github.com/niranjananandan" 
                   target="_blank" 
@@ -81,20 +77,12 @@ const Hero = () => {
                 </a>
               </div>
 
-              {/* Bottom Row: Core Actions & Resume */}
-              <div className="hero-button-row">
+              {/* Bottom Row: Centered Core Actions (2 Buttons) */}
+              <div className="hero-button-row bottom-row">
                 <a href="#projects" className="hero-btn primary">
                   <span>View Projects</span>
                   <ArrowRight size={18} />
                 </a>
-                <button 
-                  onClick={() => setIsResumeModalOpen(true)} 
-                  className="hero-btn secondary"
-                  aria-label="View Resume PDF"
-                >
-                  <Eye size={18} className="btn-icon-cyan" />
-                  <span>View Resume</span>
-                </button>
                 <a 
                   href="/Niranjan_Anandan_Resume.pdf" 
                   download="Niranjan_Anandan_Resume.pdf" 
@@ -136,12 +124,6 @@ const Hero = () => {
       >
         <a href="#about" aria-label="Scroll down"><ChevronDown size={28} color="var(--text-muted)" /></a>
       </motion.div>
-
-      {/* In-Browser PDF Resume Preview Modal */}
-      <ResumeModal
-        isOpen={isResumeModalOpen}
-        onClose={() => setIsResumeModalOpen(false)}
-      />
     </section>
   );
 };
