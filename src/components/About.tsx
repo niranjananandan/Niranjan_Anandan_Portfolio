@@ -78,6 +78,7 @@ const About = () => {
   ];
 
   const achievementsData = [
+    { title: "Logo Competition", status: "Participated", year: "2026", location: "RVSCAS" },
     { title: "Java Premier League", status: "Participated", year: "2026", location: "RVSCAS" },
     { title: "Young Innovators Ideathon", status: "Participated", year: "2025", location: "SignSpeakAI" },
     { title: "Science Exhibition", status: "Participated", year: "2025", location: "Arduino Radar - RVS CAS" }
