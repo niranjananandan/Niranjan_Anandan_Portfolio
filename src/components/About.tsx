@@ -193,11 +193,11 @@ const About = () => {
                 {/* Stats Grid */}
                 <div className="about-stats-grid">
                   <div className="about-stat-card">
-                    <div className="about-stat-value">80<span className="about-stat-accent">%</span></div>
+                    <div className="about-stat-value">70<span className="about-stat-accent">+</span></div>
                     <div className="about-stat-label">Academic Score</div>
                   </div>
                   <div className="about-stat-card">
-                    <div className="about-stat-value">3<span className="about-stat-accent">+</span></div>
+                    <div className="about-stat-value">5<span className="about-stat-accent">+</span></div>
                     <div className="about-stat-label">Featured Projects</div>
                   </div>
                   <div className="about-stat-card">
