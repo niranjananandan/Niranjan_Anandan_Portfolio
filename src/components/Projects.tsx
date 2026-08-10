@@ -28,8 +28,8 @@ const projects = [
     description: 'An interactive Power BI dashboard analyzing seasonal textile sales and material profitability. Built with Power Query and DAX, featuring a modern, dark-themed UI for actionable insights.',
     icon: <LineChart size={28} color="var(--primary-color)" />,
     tech: ['Power BI', 'Data Visualization', 'SQL'],
-    github: 'https://github.com/niranjananandan/RETAIL-TEXTILE-SHOP-DATA-ANALYSIS',
-    demo: 'https://github.com/niranjananandan/RETAIL-TEXTILE-SHOP-DATA-ANALYSIS',
+    github: 'https://github.com/niranjananandan/PowerBI-Retail-Profitability-Dashboard',
+    demo: 'https://github.com/niranjananandan/PowerBI-Retail-Profitability-Dashboard',
   },
   {
     title: 'PIXELFOODIE-RECIPE-RECOMMENDER',
