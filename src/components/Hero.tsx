@@ -90,7 +90,7 @@ const Hero = () => {
                   title="Download PDF directly"
                 >
                   <Download size={18} />
-                  <span>Download CV</span>
+                  <span>Download Resume</span>
                 </a>
               </div>
             </motion.div>
