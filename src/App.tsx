@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import NetworkBackground from './components/NetworkBackground';
 import CustomCursor from './components/CustomCursor';
 import ScrollToTop from './components/ScrollToTop';
-import AiChatWidget from './components/AiChatWidget';
 import './App.css';
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
       </main>
       <Footer />
       <ScrollToTop />
-      <AiChatWidget />
     </>
   );
 }

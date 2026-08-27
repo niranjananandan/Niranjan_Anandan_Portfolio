@@ -61,6 +61,11 @@
   color: var(--text-main);
 }
 
+.nav-links a.active {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(14, 165, 233, 0.5);
+}
+
 .contact-btn {
   background: linear-gradient(135deg, var(--primary-color) 0%, #0284c7 100%);
   border: none !important;
@@ -72,7 +77,7 @@
   box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
 }
 
-.contact-btn:hover {
+.contact-btn:hover, .contact-btn.active {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(14, 165, 233, 0.6);
 }
@@ -127,8 +132,8 @@
     font-size: 0.95rem;
   }
   
-  .mobile-menu a:hover {
+  .mobile-menu a:hover, .mobile-menu a.active {
     color: var(--primary-color);
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(255, 255, 255, 0.04);
   }
 }

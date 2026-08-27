@@ -5,6 +5,24 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'NeuroVision Brain Tumor Classification',
+    category: 'Computer Vision / CNN',
+    description: 'A custom lightweight CNN to classify brain MRI scans into Tumor or Normal categories.',
+    icon: <BrainCircuit size={28} color="var(--primary-color)" />,
+    tech: ['Deep Learning', 'Python', 'CNN'],
+    github: 'https://github.com/niranjananandan/NeuroVision-Brain-Tumor-Classification',
+    demo: 'https://github.com/niranjananandan/NeuroVision-Brain-Tumor-Classification',
+  },
+  {
+    title: 'Thread.Ai',
+    category: 'AI Assistant',
+    description: 'A smart AI assistant designed specifically for the textile industry. Analyze fabric data, track inventory, and get expert insights instantly.',
+    icon: <BrainCircuit size={28} color="var(--primary-color)" />,
+    tech: ['AI/ML', 'Python', 'Web App'],
+    github: 'https://github.com/niranjananandan/Thread.Ai',
+    demo: 'https://thread-ai-h2ma.onrender.com',
+  },
+  {
     title: 'ATTRITION-TRACKER',
     category: 'AI / Predictive Analytics',
     description: 'An AI-powered web application built to analyze employee churn data and predict attrition risk, featuring secure Firebase authentication.',

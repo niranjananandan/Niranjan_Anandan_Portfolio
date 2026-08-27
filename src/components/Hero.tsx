@@ -38,7 +38,7 @@ const Hero = () => {
             className="hero-text"
           >
             <motion.div variants={itemVariants} className="section-badge">
-              <span className="pulse-dot"></span> Artificial Intelligence & Machine Learning Student
+              <span className="pulse-dot"></span> Artificial Intelligence & Machine Learning Enthusiast
             </motion.div>
             
             <motion.h1 variants={itemVariants} className="hero-name">NIRANJAN ANANDAN</motion.h1>

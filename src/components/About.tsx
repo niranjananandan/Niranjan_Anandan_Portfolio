@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe, Building2 } from 'lucide-react';
+import Experience from './Experience';
 import './About.css';
 
 const About = () => {
@@ -69,6 +70,7 @@ const About = () => {
   ];
 
   const certificationsData = [
+    { title: "Artificial Intelligence & Machine Learning", year: "2026", provider: "Internshala Trainings" },
     { title: "AI Essentials", year: "2026", provider: "FreeAcademy.ai" },
     { title: "Cloud Computing with AI", year: "2026", provider: "Unstop" },
     { title: "Machine Learning Using Python", year: "2026", provider: "SIMPLILEARN" },
@@ -218,6 +220,8 @@ const About = () => {
           </motion.div>
         </div>
       </section>
+
+      <Experience />
 
       {/* Skills Section */}
       <section className="section-padding" id="skills">
