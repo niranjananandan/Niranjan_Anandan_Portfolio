@@ -5,6 +5,24 @@ import './Projects.css';
 
 const projects = [
   {
+    title: 'Natural Language Data Querying (NLQ) System',
+    category: 'AI / Data Querying',
+    description: 'An AI-powered tool that lets users ask database questions in plain English and get instant SQL-backed answers.',
+    icon: <Database size={28} color="var(--primary-color)" />,
+    tech: ['AI/ML', 'Python', 'SQL', 'GenAI'],
+    github: 'https://github.com/niranjananandan',
+    demo: 'https://nlq-natural-language-query.vercel.app',
+  },
+  {
+    title: 'YOLOv5 Self-Driving Object Detection',
+    category: 'Computer Vision',
+    description: 'Demonstrates real-time object detection for self-driving vehicle perception using the YOLOv5 deep learning model.',
+    icon: <BrainCircuit size={28} color="var(--primary-color)" />,
+    tech: ['Deep Learning', 'Python', 'YOLOv5', 'Computer Vision'],
+    github: 'https://github.com/niranjananandan/YOLOv5-Self-Driving-Object-Detection',
+    demo: 'https://github.com/niranjananandan/YOLOv5-Self-Driving-Object-Detection',
+  },
+  {
     title: 'NeuroVision Brain Tumor Classification',
     category: 'Computer Vision / CNN',
     description: 'A custom lightweight CNN to classify brain MRI scans into Tumor or Normal categories.',
@@ -49,15 +67,7 @@ const projects = [
     github: 'https://github.com/niranjananandan/PowerBI-Retail-Profitability-Dashboard',
     demo: 'https://github.com/niranjananandan/PowerBI-Retail-Profitability-Dashboard',
   },
-  {
-    title: 'PIXELFOODIE-RECIPE-RECOMMENDER',
-    category: 'Smart Recommender',
-    description: 'An AI-Powered Smart Recipe Recommender system that intelligently matches recipes based on available kitchen ingredients.',
-    icon: <Code size={28} color="var(--primary-color)" />,
-    tech: ['AI', 'Python', 'Recommendation Engine'],
-    github: 'https://github.com/niranjananandan/PIXELFOODIE-RECIPE-RECOMMENDER',
-    demo: 'https://pixelfoodie-recipe-recomender.onrender.com',
-  },
+
   {
     title: 'PIXELFOODIE',
     category: 'Web Application',
@@ -66,6 +76,24 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'Web Design'],
     github: 'https://github.com/niranjananandan/PIXELFOODIE',
     demo: 'https://pixelfoodie-recipes.onrender.com',
+  },
+  {
+    title: 'Used-Car-Price-Predictor',
+    category: 'Machine Learning',
+    description: 'End-to-end machine learning project for predicting used car prices.',
+    icon: <Database size={28} color="var(--primary-color)" />,
+    tech: ['Machine Learning', 'Python', 'Jupyter Notebook'],
+    github: 'https://github.com/niranjananandan/Used-Car-Price-Predictor',
+    demo: 'https://github.com/niranjananandan/Used-Car-Price-Predictor',
+  },
+  {
+    title: 'Mini-Chatbot',
+    category: 'AI Assistant',
+    description: 'A simple AI chatbot built with Python and Google Gemini API.',
+    icon: <BrainCircuit size={28} color="var(--primary-color)" />,
+    tech: ['AI', 'Python', 'Gemini API'],
+    github: 'https://github.com/niranjananandan/Mini-Chatbot',
+    demo: 'https://github.com/niranjananandan/Mini-Chatbot',
   },
 ];
 

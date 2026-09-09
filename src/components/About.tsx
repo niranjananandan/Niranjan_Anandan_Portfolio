@@ -48,21 +48,21 @@ const About = () => {
   const educationData = [
     {
       degree: "Bachelor's in AI and ML",
-      score: "75.3%",
+      score: "75%",
       year: "2027",
       institution: "RVS College Of Arts & Science, Coimbatore",
       status: "Ongoing"
     },
     {
       degree: "HSC in Computer Maths",
-      score: "71.2%",
+      score: "72.5%",
       year: "2024",
       institution: "Annai Matric Higher Sec School, Tiruppur",
       status: "Completed"
     },
     {
       degree: "SSLC",
-      score: "77.2%",
+      score: "77%",
       year: "2022",
       institution: "Annai Matric Higher Sec School, Tiruppur",
       status: "Completed"
@@ -70,13 +70,12 @@ const About = () => {
   ];
 
   const certificationsData = [
-    { title: "Artificial Intelligence & Machine Learning", year: "2026", provider: "Internshala Trainings" },
-    { title: "AI Essentials", year: "2026", provider: "FreeAcademy.ai" },
-    { title: "Cloud Computing with AI", year: "2026", provider: "Unstop" },
-    { title: "Machine Learning Using Python", year: "2026", provider: "SIMPLILEARN" },
-    { title: "Intro To Generative AI", year: "2026", provider: "AWS by AMAZON" },
-    { title: "Google AI & Gen AI Workflow", year: "2025", provider: "GOOGLE GEMINI" },
-    { title: "AI For Business Professionals", year: "2025", provider: "HP LIFE" }
+    { title: "Artificial Intelligence & Machine Learning", year: "2026", provider: "Internshala" },
+    { title: "Machine Learning Using Python", year: "2026", provider: "UpSkill" },
+    { title: "Data Analytics With Generative AI", year: "2026", provider: "Simplilearn" },
+    { title: "AI Essentials", year: "2026", provider: "Free Academy.Ai" },
+    { title: "Cloud Computing", year: "2025", provider: "Unstop" },
+    { title: "AI for Business Professionals", year: "2025", provider: "HP LIFE" }
   ];
 
   const achievementsData = [

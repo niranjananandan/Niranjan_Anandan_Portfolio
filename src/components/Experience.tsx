@@ -4,15 +4,26 @@ import './Experience.css';
 
 const experienceData = [
   {
-    role: "Artificial Intelligence & Machine Learning Trainee",
-    company: "Internshala Trainings",
-    duration: "6 Weeks (Completed Aug 2026)",
-    description: "Completed a comprehensive 6-week online training on Artificial Intelligence & Machine Learning.",
+    role: "PYTHON & GENAI TRAINEE",
+    company: "NET TEL SOLUTIONS",
+    duration: "Recent",
+    description: "Trainee focused on Python and Generative AI.",
     highlights: [
-      "Modules covered: Introduction to AI and ML, Building Blocks of AI, Quintessential Tools, Frameworks & Libraries.",
-      "Recognized as a top performer in the training."
+      "Gained hands-on experience in Python programming and Generative AI fundamentals.",
+      "Explored LLMs (Large Language Models) and prompt engineering techniques to optimize AI outputs."
     ],
     icon: <Briefcase size={24} color="var(--primary-color)" />
+  },
+  {
+    role: "ARTIFICIAL INTELLIGENCE & MACHINE LEARNING",
+    company: "INTERNSHALA",
+    duration: "Completed",
+    description: "Comprehensive training and hands-on projects in AI & ML.",
+    highlights: [
+      "Completed comprehensive training and hands-on projects in AI & ML learning.",
+      "Utilized Python libraries such as Pandas, NumPy, and Scikit-learn for data preprocessing and model evaluation."
+    ],
+    icon: <Award size={24} color="var(--primary-color)" />
   }
 ];
 
