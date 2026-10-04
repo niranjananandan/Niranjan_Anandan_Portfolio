@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe, Building2, Eye } from 'lucide-react';
 import Experience from './Experience';
