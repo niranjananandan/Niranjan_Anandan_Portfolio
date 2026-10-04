@@ -1,6 +1,8 @@
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe, Building2 } from 'lucide-react';
+import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe, Building2, Eye } from 'lucide-react';
 import Experience from './Experience';
+import CertificateModal from './CertificateModal';
 import './About.css';
 
 const About = () => {
@@ -70,13 +72,21 @@ const About = () => {
   ];
 
   const certificationsData = [
-    { title: "Artificial Intelligence & Machine Learning", year: "2026", provider: "Internshala" },
-    { title: "Machine Learning Using Python", year: "2026", provider: "UpSkill" },
-    { title: "Data Analytics With Generative AI", year: "2026", provider: "Simplilearn" },
-    { title: "AI Essentials", year: "2026", provider: "Free Academy.Ai" },
-    { title: "Cloud Computing", year: "2025", provider: "Unstop" },
-    { title: "AI for Business Professionals", year: "2025", provider: "HP LIFE" }
+    { title: "Artificial Intelligence & Machine Learning", year: "2026", provider: "Internshala", link: "/certificates/ai-ml-internshala.pdf" },
+    { title: "Data Analytics with Generative AI", year: "2026", provider: "Simplilearn", link: "/certificates/data-analytics-genai-simplilearn.pdf" },
+    { title: "Cloud Computing with AI", year: "2025", provider: "Unstop", link: "/certificates/computing-ai-unstop.pdf" },
+    { title: "AI Essentials", year: "2026", provider: "Free Academy.ai", link: "/certificates/ai-essentials-freeacademy.pdf" },
+    { title: "AI for Business Professionals", year: "2025", provider: "HP LIFE", link: "/certificates/ai-business-professionals-hplife.pdf" },
+    { title: "Machine Learning Using Python", year: "2026", provider: "Simplilearn", link: "/certificates/machine-learning-using-python-simplilearn.pdf" }
   ];
+
+  const [certModalOpen, setCertModalOpen] = useState(false);
+  const [selectedCert, setSelectedCert] = useState<{url: string, title: string} | null>(null);
+
+  const openCertModal = (url: string, title: string) => {
+    setSelectedCert({ url, title });
+    setCertModalOpen(true);
+  };
 
   const achievementsData = [
     { title: "Logo Competition", status: "Participated", year: "2026", location: "RVSCAS" },
@@ -315,6 +325,15 @@ const About = () => {
                     <p className="cert-provider">{cert.provider}</p>
                     <span className="cert-year">{cert.year}</span>
                   </div>
+                  {cert.link && cert.link !== "#" && (
+                    <button 
+                      className="cert-view-btn" 
+                      onClick={() => openCertModal(cert.link, cert.title)}
+                    >
+                      <Eye size={16} />
+                      View Certificate
+                    </button>
+                  )}
                 </motion.div>
               ))}
             </div>
@@ -335,6 +354,12 @@ const About = () => {
           </motion.div>
         </div>
       </section>
+      <CertificateModal 
+        isOpen={certModalOpen} 
+        onClose={() => setCertModalOpen(false)} 
+        certificateUrl={selectedCert?.url || ''} 
+        certificateTitle={selectedCert?.title || ''}
+      />
     </>
   );
 };

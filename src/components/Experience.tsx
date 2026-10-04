@@ -1,8 +1,20 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar, Award } from 'lucide-react';
+import { Briefcase, Calendar, Award, ExternalLink } from 'lucide-react';
 import './Experience.css';
 
 const experienceData = [
+  {
+    role: "LOGISTICS DATA ANALYST INTERN",
+    company: "YUVAINTERN",
+    duration: "August 2026",
+    description: "Successfully completed an internship in data analytics, consistently demonstrating dedication and professionalism.",
+    highlights: [
+      "Analyzed and processed logistics data, exhibiting strong problem-solving skills and a willingness to learn.",
+      "Collaborated effectively with the team to deliver insights with integrity and commitment."
+    ],
+    icon: <Briefcase size={24} color="var(--primary-color)" />,
+    certificate: "/Professional Experience/logistics-data-analyst-yuvaintern.pdf"
+  },
   {
     role: "PYTHON & GENAI TRAINEE",
     company: "NET TEL SOLUTIONS",
@@ -12,7 +24,8 @@ const experienceData = [
       "Gained hands-on experience in Python programming and Generative AI fundamentals.",
       "Explored LLMs (Large Language Models) and prompt engineering techniques to optimize AI outputs."
     ],
-    icon: <Briefcase size={24} color="var(--primary-color)" />
+    icon: <Briefcase size={24} color="var(--primary-color)" />,
+    certificate: "/Professional Experience/python-with-genai-net-tel-solution.pdf"
   },
   {
     role: "ARTIFICIAL INTELLIGENCE & MACHINE LEARNING",
@@ -23,7 +36,8 @@ const experienceData = [
       "Completed comprehensive training and hands-on projects in AI & ML learning.",
       "Utilized Python libraries such as Pandas, NumPy, and Scikit-learn for data preprocessing and model evaluation."
     ],
-    icon: <Award size={24} color="var(--primary-color)" />
+    icon: <Award size={24} color="var(--primary-color)" />,
+    certificate: "/Professional Experience/aI&mL-internshala.pdf"
   }
 ];
 
@@ -95,6 +109,31 @@ const Experience = () => {
                       </li>
                     ))}
                   </ul>
+                  {exp.certificate && (
+                    <a 
+                      href={exp.certificate} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="experience-certificate-link"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        marginTop: '1.2rem',
+                        fontSize: '0.9rem',
+                        fontWeight: '500',
+                        color: 'var(--primary-color)',
+                        textDecoration: 'none',
+                        transition: 'opacity 0.2s',
+                        cursor: 'pointer'
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
+                      onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
+                    >
+                      <ExternalLink size={16} />
+                      View Certificate
+                    </a>
+                  )}
                 </div>
               </motion.div>
             ))}
