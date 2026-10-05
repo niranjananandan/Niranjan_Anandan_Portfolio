@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe, Building2, Eye } from 'lucide-react';
+import { Terminal, Code, BrainCircuit, BookOpen, Award, MapPin, Mail, Phone, GraduationCap, Cpu, BarChart2, Sparkles, TrendingUp, Globe, Building2, Eye, Network, Users, Presentation, RefreshCcw, Rocket } from 'lucide-react';
+import { FaPython, FaHtml5, FaGitAlt, FaDatabase, FaRProject, FaRobot, FaHandshake } from 'react-icons/fa';
+import { SiJupyter, SiBlender, SiGooglecolab, SiRstudioide } from 'react-icons/si';
 import Experience from './Experience';
 import CertificateModal from './CertificateModal';
 import './About.css';
@@ -33,17 +35,42 @@ const About = () => {
     {
       category: "Technical Skills",
       icon: <Terminal size={22} color="var(--primary-color)" />,
-      skills: ['Python', 'MYSQL', 'HTML', 'GenAI', 'Machine Learning', 'Deep Learning', 'Data Visualization', 'R (tidyverse, ggplot2)']
+      skills: [
+        { name: 'Python', icon: <FaPython color="#3776AB" /> },
+        { name: 'MYSQL', icon: <FaDatabase color="#4479A1" /> },
+        { name: 'HTML', icon: <FaHtml5 color="#E34F26" /> },
+        { name: 'GenAI', icon: <Sparkles color="#A855F7" /> },
+        { name: 'Machine Learning', icon: <BrainCircuit color="#10B981" /> },
+        { name: 'Deep Learning', icon: <Network color="#3B82F6" /> },
+        { name: 'Data Visualization', icon: <BarChart2 color="#F59E0B" /> },
+        { name: 'R (tidyverse)', icon: <FaRProject color="#276DC3" /> }
+      ]
     },
     {
       category: "Tools & Platforms",
       icon: <Code size={22} color="var(--primary-color)" />,
-      skills: ['Git', 'VSCode', 'Jupyter', 'RStudio', 'Power BI', 'Blender', 'GPT-4o', 'Google Colab', 'Claude 3.5', 'Antigravity']
+      skills: [
+        { name: 'Git', icon: <FaGitAlt color="#F05032" /> },
+        { name: 'VSCode', icon: <Code color="#007ACC" /> },
+        { name: 'Jupyter', icon: <SiJupyter color="#F37626" /> },
+        { name: 'RStudio', icon: <SiRstudioide color="#75AADB" /> },
+        { name: 'Power BI', icon: <BarChart2 color="#F2C811" /> },
+        { name: 'Blender', icon: <SiBlender color="#F5792A" /> },
+        { name: 'GPT-4o', icon: <BrainCircuit color="#412991" /> },
+        { name: 'Google Colab', icon: <SiGooglecolab color="#F9AB00" /> },
+        { name: 'Claude 3.5', icon: <FaRobot color="#D97757" /> },
+        { name: 'Antigravity', icon: <Rocket color="#E879F9" /> }
+      ]
     },
     {
       category: "Soft Skills",
       icon: <BrainCircuit size={22} color="var(--primary-color)" />,
-      skills: ['Leadership', 'Teamwork', 'Adaptability', 'Presentation Skills']
+      skills: [
+        { name: 'Leadership', icon: <Users color="#38BDF8" /> },
+        { name: 'Teamwork', icon: <FaHandshake color="#4ADE80" /> },
+        { name: 'Adaptability', icon: <RefreshCcw color="#F472B6" /> },
+        { name: 'Presentation', icon: <Presentation color="#FBBF24" /> }
+      ]
     }
   ];
 
@@ -253,7 +280,10 @@ const About = () => {
                   </div>
                   <div className="skill-pill-list">
                     {group.skills.map((skill) => (
-                      <span key={skill} className="skill-pill">{skill}</span>
+                      <span key={skill.name} className="skill-pill">
+                        <span className="skill-icon">{skill.icon}</span>
+                        {skill.name}
+                      </span>
                     ))}
                   </div>
                 </motion.div>
